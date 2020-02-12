@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox Gl JS</title>
+    <link href="src/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marker {
+            background-image: url('src/download.png');
+            background-size: cover;
+            width: 40px;
+            height: 40px;
+            border-radius: 40%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="src/mapbox-gl.js"></script>
+<script src="src/main.js"></script>
+<script>
+    mapModules.renderMapboxGlJS();
+</script>
+</body>
+</html>
