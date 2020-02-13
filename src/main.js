@@ -87,16 +87,6 @@ var mapModules = (function () {
             // var latlongstr = String(latlong["lat"]) +  " -- " + String(latlong["lng"]);
             console.log(latlong);
             marker2.setLngLat(latlong);
-            var data = latlong
-            alert("AJAX")
-            $.ajax({
-                url: "/index/",
-                data: data,
-                cache: false,
-                success: function(html){
-                  alert('done')
-                }
-              });
             
         });
         
